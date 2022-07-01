@@ -1,0 +1,83 @@
+.nav {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+.botoes__login {
+    width: 120px;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: solid 1px #335add;
+    color: #335add;
+    margin: 0;
+}
+.pesquisa {
+    display: none;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    gap: 10px;
+}
+.central {
+    position: absolute;
+    margin: 5px;
+    top: 0;
+    left: 0;
+}
+.pesquisa_menor {
+    display: none;
+}
+.pesquisa_menor--estilo {
+    width: 250px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.pesquisa__campo {
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.lupa{
+    cursor: pointer;
+}
+.botoes {
+    display: flex;
+    width: 176px;
+    justify-content: space-between;
+}
+@media screen and (min-width: 380px) {
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .lupa {
+        margin-right: 20px;
+    }
+    .logo_geek {
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 678px) {
+    .pesquisa {
+        display: flex;
+    }
+    .botoes__lupa {
+        display: none;
+    }
+    .central {
+        display: none;
+    }
+}
+
