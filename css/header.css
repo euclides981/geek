@@ -5,6 +5,7 @@
     text-align: center;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 .botoes__login {
     width: 120px;
@@ -14,6 +15,7 @@
     border: solid 1px #335add;
     color: #335add;
     margin: 0;
+    text-decoration: none;
 }
 .pesquisa {
     display: none;
@@ -26,8 +28,7 @@
 }
 .central {
     position: absolute;
-    margin: 5px;
-    top: 0;
+    top: 1;
     left: 0;
 }
 .pesquisa_menor {
@@ -35,12 +36,12 @@
 }
 .pesquisa_menor--estilo {
     width: 250px;
+    box-shadow: 1px 1px 10px #000;
     background-color: #F5F5F5;
     border-radius: 20px;
     padding: 10px;
     align-items: center;
     gap: 10px;
-    justify-content: center;
 }
 .pesquisa__campo {
     width: 200px;
@@ -80,4 +81,3 @@
         display: none;
     }
 }
-
