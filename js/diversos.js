@@ -1,4 +1,4 @@
-let caminhoDiversos = '../img/produtos/diversos/'
+let caminhoDiversos = 'https://euclides981.github.io/geek/img/produtos/diversos/'
 const diversos = [
     {
         id: 0,

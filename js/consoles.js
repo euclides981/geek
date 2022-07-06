@@ -1,4 +1,4 @@
-let caminhoConsoles = '../img/produtos/consoles/'
+let caminhoConsoles = 'https://euclides981.github.io/geek/img/produtos/consoles/'
 const consoles = [
     {
         id: 0,
