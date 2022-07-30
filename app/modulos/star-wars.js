@@ -1,4 +1,4 @@
-let caminho = 'https://euclides981.github.io/geek/img/produtos/star-wars/'
+let caminho = 'img/produtos/star-wars/'
 
 module.exports = [
     

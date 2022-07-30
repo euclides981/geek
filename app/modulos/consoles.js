@@ -1,4 +1,4 @@
-let caminhoConsoles = 'https://euclides981.github.io/geek/img/produtos/consoles/'
+let caminhoConsoles = 'img/produtos/consoles/'
 
 module.exports = [
 
