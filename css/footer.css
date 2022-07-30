@@ -58,6 +58,7 @@
     width: 100%;
 }
 .rodape__botao {
+    cursor: pointer;
     background-color: #2a7ae4;
     padding: 12px 16px;
     color: #fff;

@@ -53,7 +53,8 @@ function criadorConsoles() {
     <img class='produtos__imagem' src="${console.imagem}" alt="">
     <p class='produtos__titulo'>${console.titulo}</p>
     <p class='produtos__valor'>${console.valor}</p>
-    <button class='produtos__botao'>${console.botao}</button>
+    <a class='produtos__botao' href="/produtos/?${console.id}">${console.botao}</button>
+    </a>
     </div>
 `
     })
