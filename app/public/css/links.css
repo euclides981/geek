@@ -21,6 +21,7 @@
     gap: 30px;
     margin: 25px;
     text-align: center;
+    justify-content: center;
 }
 .links__titulo {
     margin-bottom: 20px;
@@ -31,6 +32,7 @@
 .links__conteudo {
     margin-top: 20px;
     text-align: left;
+    max-width: 1000px;
 }
 .imgLinks {
     width: 100%;
