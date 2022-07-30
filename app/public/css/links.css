@@ -1,8 +1,7 @@
-html {
-    scroll-behavior: smooth;
-}
+
 .links__navega {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     font-weight: bold;
@@ -20,11 +19,24 @@ html {
 .links {
     display: grid;
     gap: 30px;
-    margin: 25px 80px;
+    margin: 25px;
+    text-align: center;
+}
+.links__titulo {
+    margin-bottom: 20px;
 }
 .links__a {
-    padding: 50px;
+    padding: 10px;
 }
 .links__conteudo {
     margin-top: 20px;
+    text-align: left;
+}
+.imgLinks {
+    width: 100%;
+    max-width: 400px;
+}
+.mapaLinks {
+    width: 100%;
+    
 }
