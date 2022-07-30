@@ -1,0 +1,27 @@
+<%- include('../common/header') %>
+<%- include('../common/menu')  %>
+
+<link rel="stylesheet" href="css/produtosMais.css">
+
+<script>
+    window.document.title = 'Star Wars'
+</script> 
+
+<main>
+    <div id="produtos"> 
+        <div class="ttl"><div class="produtos__titulo__principal">Star Wars</div>
+        </div>
+        <div class="star-wars">
+            <% stars.forEach((star, index) => { %>
+                <div class="produtos__item">
+                    <img class='produtos__imagem' src="<%= star.imagem %>" alt="<%= star.alt %>">
+                    <p class='produtos__titulo'><%= star.titulo %></p>
+                    <p class='produtos__valor'><%= star.valor %></p>
+                    <a class='produtos__botao' href="/detalhe-star-wars?id=<%= index %>"><%= star.botao %></a>
+                </div>
+            <% }) %>     
+        </div>
+    </div>
+</main>
+
+<%- include('../common/footer')  %>

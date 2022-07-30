@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+.links__navega {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+.links__navega a {
+    background-color: rgb(88, 115, 206);
+    border-radius: 5px;
+    width: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.links {
+    display: grid;
+    gap: 30px;
+    margin: 25px 80px;
+}
+.links__a {
+    padding: 50px;
+}
+.links__conteudo {
+    margin-top: 20px;
+}

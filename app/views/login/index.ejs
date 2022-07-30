@@ -1,0 +1,18 @@
+<%- include('../common/header') %>
+<%- include('../common/menu')  %>
+<script>
+    window.document.title = 'Login Geek'
+</script> 
+
+<main>
+    <div class="sessao">
+        <!-- <form action="/login/autenticar" method="post"> -->
+        <p class="sessao__titulo">Iniciar Sessão</p>
+        <input class="sessao__input" type="text" name="usuario" id="usuario" placeholder="Informe Seu Email">
+        <input class="sessao__input" type="password" name="senha" id="senha" placeholder="Informe sua senha">
+        <button type="submit" onclick="logar()" class="sessao__btn">Entrar</button>
+        <!-- </form> -->
+    </div>
+</main>
+
+<%- include('../common/footer')  %>

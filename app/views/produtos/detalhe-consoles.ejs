@@ -1,0 +1,17 @@
+<%- include('../common/header') %>
+<%- include('../common/menu')  %>
+
+<script>window.document.title = `Detalhe do <%= console.titulo %>`</script>
+     
+<main>
+    <div class="detalhe">
+        <div class="detalhe__titulo"><%= console.titulo %></div>
+        <div class="detalhe__imgDesc">
+            <img class="detalhe__imagem" src="<%= console.imagem %>" alt="<%= console.alt %>">
+            <p class="detalhe__desc"><%= console.desc %></p>
+        </div>
+        <p class="detalhe__valor"><%= console.valor %></p>
+    </div>
+</main>
+<script src="js/detalhe.js"></script>
+<%- include('../common/footer')  %>

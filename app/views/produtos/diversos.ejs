@@ -1,0 +1,27 @@
+<%- include('../common/header') %>
+<%- include('../common/menu')  %>
+
+<link rel="stylesheet" href="css/produtosMais.css">
+
+<script>
+    window.document.title = 'Diversos'
+</script> 
+
+<main>
+    <div id="produtos">
+        <div class="ttl"><div class="produtos__titulo__principal">Diversos</div>
+        </div>
+        <div class="diversos">
+            <% diversos.forEach((diverso, index) => { %>
+                <div class="produtos__item">
+                    <img class='produtos__imagem' src="<%= diverso.imagem %>" alt="<%= diverso.alt %>">
+                    <p class='produtos__titulo'><%= diverso.titulo %></p>
+                    <p class='produtos__valor'><%= diverso.valor %></p>
+                    <a class='produtos__botao' href="/detalhe-diversos?id=<%= index %>"><%= diverso.botao %></a>
+                </div>
+            <% }) %> 
+        </div>
+    </div>
+</main>
+
+<%- include('../common/footer')  %>

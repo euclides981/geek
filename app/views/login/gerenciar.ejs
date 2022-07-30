@@ -1,0 +1,56 @@
+<%- include('../common/header') %>
+<%- include('../common/menu')  %>
+<link rel="stylesheet" href="css/adm-produtos.css">
+<script>
+    window.document.title = 'Adicionar, editar e excluir produtos'
+</script>
+
+<main>
+    
+    <div class="tituloAdm">
+        <h1>Painel do Administrador</h1>
+        <button type="button" class="botaoAdm" id="cadastrarCliente">Cadastrar Produto</button>
+        <button type="button" class="botaoAdm" id="verAdicionados">Ver Adicionados</button>
+    </div>
+        
+    <div class="areaEdidavel">
+
+        <table id="tableClient" >
+            <tbody class="admLinhas">
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Novo Produto</h2>
+                <span class="modal-close" id="modalClose">&#10006;</span>
+            </header>
+            <form id="form" class="modal-form">
+
+                <label class="labelForm" for="">http://terra.com.br/kjkj.png</label>
+                <input id="imagem" type="text" data-index="new" class="modal-field" placeholder="Caminho da Imagem" required>
+
+                <label class="labelForm" for="">Descrição da Imagem</label>
+                <input id="alt" type="text" class="modal-field" placeholder="Descrição da Imagem" required>
+                
+                <label class="labelForm" for="">Máximo 18 Caracteres</label>
+                <input id="titulo" type="text" class="modal-field" placeholder="Título do Produto" maxlength="18" required>
+
+                <label class="labelForm" for="">Descrição do Produto</label>
+                <input id="desc" type="text" class="modal-field" placeholder="Descrição do Produto" required>
+                
+                <label class="labelForm" for="">Valor do Produto</label>
+                <input id="valor" type="number" class="modal-field" placeholder="Valor do Produto" required>
+            </form>
+            <footer class="modal-footer">
+                <button id="salvar" class="btnGerenciar">Salvar</button>
+                <button id="cancelar" class="btnGerenciar btVermelho">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+</main>
+<script src="js/gerencia.js"></script>
+<%- include('../common/footer')  %>

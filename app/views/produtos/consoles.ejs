@@ -1,0 +1,27 @@
+<%- include('../common/header') %>
+<%- include('../common/menu')  %>
+
+<link rel="stylesheet" href="css/produtosMais.css">
+
+<script>
+    window.document.title = 'Consoles'
+</script> 
+        
+<main>
+    <div id="produtos"> 
+        <div class="ttl"><div class="produtos__titulo__principal">Consoles</div>
+        </div>
+        <div class="consoles">
+            <% consoles.forEach((console, index) => { %>
+                <div class="produtos__item">
+                    <img class='produtos__imagem' src="<%= console.imagem %>" alt="<%= console.alt %>">
+                    <p class='produtos__titulo'><%= console.titulo %></p>
+                    <p class='produtos__valor'><%= console.valor %></p>
+                    <a class='produtos__botao' href="/detalhe-consoles?id=<%= index %>"><%= console.botao %></a>
+                </div>
+            <% }) %>     
+        </div>
+    </div>
+</main>
+
+<%- include('../common/footer')  %>

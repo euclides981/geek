@@ -1,0 +1,57 @@
+<%- include('../common/header') %>
+<%- include('../common/menu')  %>
+<link rel="stylesheet" href="css/produtos.css">
+<link rel="stylesheet" href="css/child.css">
+
+<div id="produtos">
+
+   <!-- Star-Wars -->
+   <div class="ttl"><div class="produtos__titulo__principal">Star Wars</div><div class="produtos__tudo"><a href="star-wars">Ver Tudo ▶</a></div>
+   </div>
+   <div class="star-wars">
+      <% stars.forEach((star, index) => { %>
+          <div class="produtos__item">
+              <img class='produtos__imagem' src="<%= star.imagem %>" alt="<%= star.alt %>">
+              <p class='produtos__titulo'><%= star.titulo %></p>
+              <p class='produtos__valor'><%= star.valor %></p>
+              <a class='produtos__botao' href="/detalhe-star-wars?id=<%= index %>"><%= star.botao %></a>
+          </div>
+      <% }) %>     
+  </div>
+
+   <!-- Consoles -->
+   <div class="ttl"><div class="produtos__titulo__principal">Consoles</div><div class="produtos__tudo"><a href="consoles">Ver Tudo ▶</a></div>
+   </div>
+   <div class="consoles">
+      <% consoles.forEach((console, index) => { %>
+        <div class="produtos__item">
+            <img class='produtos__imagem' src="<%= console.imagem %>" alt="<%= console.alt %>">
+            <p class='produtos__titulo'><%= console.titulo %></p>
+            <p class='produtos__valor'><%= console.valor %></p>
+            <a class='produtos__botao' href="/detalhe-consoles?id=<%= index %>"><%= console.botao %></a>
+        </div>
+      <% }) %>   
+   </div>
+
+   <!-- Diversos -->
+    <div class="ttl"><div class="produtos__titulo__principal">Diversos</div><div class="produtos__tudo"><a href="diversos">Ver Tudo ▶</a></div>
+    </div>
+    <div class="diversos">
+        <% diversos.forEach((diverso, index) => { %>
+            <div class="produtos__item">
+                <img class='produtos__imagem' src="<%= diverso.imagem %>" alt="<%= diverso.alt %>">
+                <p class='produtos__titulo'><%= diverso.titulo %></p>
+                <p class='produtos__valor'><%= diverso.valor %></p>
+                <a class='produtos__botao' href="/detalhe-diversos?id=<%= index %>"><%= diverso.botao %></a>
+            </div>
+        <% }) %> 
+    </div>
+
+    <!-- Adicionados -->
+    <div id="babe" class="ttl"></div>
+    <div class="adicionados"></div>
+
+</div>
+<script src="js/mostra.js"></script>
+<script src="js/adm.js"></script>
+<%- include('../common/footer')  %>
