@@ -59,7 +59,8 @@
     margin: 40px 0 10px 0;
 }
 .produtos__tudo {
-   margin-bottom: 20px;
+   margin: 20px;
+   text-align: center;
 }
 .produtos__tudo a {
     color: rgb(95, 115, 204);
