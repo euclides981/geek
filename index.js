@@ -47,7 +47,8 @@ app.get('/consoles', function(req,res){
 app.get('/detalhe-consoles', function(req, res){
    //Recuperar através do método GET o id
    const id = req.query.id
-   res.render('produtos/detalhe-consoles', { console: consoles[id] })
+   res.render('produtos/detalhe-consoles', { console: consoles[id]})
+   /* res.render('produtos/detalhe-consoles', {diversos: diversos}) */
 })
 
 //Rota Diversos
@@ -69,6 +70,11 @@ app.get('/varios', function(req, res){
 app.get('/detalhe-nova', function(req, res){
    res.render('produtos/detalhe-nova')
 })
+
+// Rota id Similar
+app.get('/detalhe-similar', function(req, res){
+    res.render('produtos/detalhe-similar')
+ })
 
 //Rota Gerenciar
 app.get('/gerenciar', function(req, res){

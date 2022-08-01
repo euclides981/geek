@@ -1,7 +1,5 @@
 var nova = JSON.parse(localStorage.getItem('db_produtos')) || []
 
-
-
 //Funçã Mostra Adicionados
 const adicionados = document.querySelector('.adicionados')
 function mostraAdicionados() {

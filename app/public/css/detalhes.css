@@ -12,13 +12,17 @@
     justify-content: center;
     align-items: center;
 }
+.detalhe__img {
+    display: flex;
+    justify-content: center;
+}
 .detalhe__imagem {
     width: 100%;
     max-width: 400px;
     margin-bottom: 20px;
 }
 .detalhe__desc {
-    text-align: center;
+    text-align: left;
     color: #000;
     max-width: 400px;
     margin: 20px;

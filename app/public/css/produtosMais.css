@@ -69,3 +69,12 @@
     text-align: center;
     margin: 20px 0;
 }
+.tituloSimilar {
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f1f1f3;
+    color: rgb(64, 135, 230);
+    margin-bottom: 20px;
+    font-weight: 600;
+}

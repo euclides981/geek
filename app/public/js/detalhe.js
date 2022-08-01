@@ -13,7 +13,9 @@ function montaDetalhe() {
             <div class="detalhe">
                 <div class="detalhe__titulo">${nova[id].titulo}</div>
                 <div class="detalhe__imgDesc">
+                <div class='detalhe__img'>
                     <img class="detalhe__imagem" src="${nova[id].imagem}" alt="${nova[id].alt}">
+                </div>
                     <p class="detalhe__desc">${nova[id].desc}</p>
                 </div>
                 <p class="detalhe__valor">R$${nova[id].valor}</p>
