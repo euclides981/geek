@@ -3,7 +3,7 @@ var nova = JSON.parse(localStorage.getItem('db_produtos')) || []
 
 var url = window.location.href
 
-var id = url.split('=')[1]
+var id = url.split('=')[2]
 
 const detalheProduto = document.querySelector('.detalhe-novo')
 

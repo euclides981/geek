@@ -9,7 +9,7 @@ function mostraAdicionados() {
         <img class='produtos__imagem' src="${nova.imagem}" alt="${nova.alt}">
         <p class='produtos__titulo'>${nova.titulo}</p>
         <p class='produtos__valor'>R$${nova.valor},99</p>
-        <a class='produtos__botao' href="/detalhe-nova?id=${index}">Ver Produto</a>
+        <a class='produtos__botao' href="/detalhe-nova?produto=${nova.titulo}?id=${index}">Ver Produto</a>
         </div>
     `
    })
